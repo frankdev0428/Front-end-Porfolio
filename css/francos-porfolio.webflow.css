@@ -1098,9 +1098,17 @@ blockquote {
 }
 
 .project-image-base {
-  width: 100%;
+  width: ;
   max-width: 460px;
+  display : grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap : 1rem;
+  border: 1px solid black;
 }
+.project-image-base img{
+   margin : 1rem;
+}
+
 
 .button-arrow {
   position: relative;
