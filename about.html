@@ -26,6 +26,33 @@
   <!-- Font awesome CDN-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- End of font Awesome -->
+<!-- stylesheet -->
+ <style>
+  .form-button{
+  width: 50%;
+  padding: 19px 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.form-button:hover {
+  background-color: #2186c4;
+  transform: scale(1.05);
+}
+
+.form-button:active {
+  background-color: #1a648e;
+  transform: scale(0.95);
+}
+  
+ </style>
+<!-- End of stylesheet -->
 </head>
 <body>
   <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navigation w-nav">
@@ -331,9 +358,7 @@
           <label for="Message-Form" class="field-label">Subject <span class="text-span">*</span></label>
           <textarea id="Message-Form" name="Message-Form" maxlength="5000" data-name="Message Form" placeholder="Type your subject here" required="" class="text-field-white w-input"></textarea>
           <div class="form-container">
-            <a href="#" class="button-submit w-inline-block">
-              <button class="button-submit w-inline-block" type="submit">Submit Now</button>
-            </a>
+            <button type="submit" class="form-button">Submit</button>
           </div>
         </form>
         <!-- End of form editting -->
@@ -379,7 +404,9 @@
       <div class="newsletter-wrapper">
         <h5>Subscribe to our newsletter</h5>
         <div class="subscribe-form w-form">
-          <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form-wrapper"><input type="email" class="text-field w-input" maxlength="256" name="Newsletter-Form" data-name="Newsletter Form" placeholder="EMAIL ADDRESSS" id="Newsletter-Form" required=""><input type="submit" value="Subscribe" data-wait="Please wait..." class="button-form w-button"></form>
+          <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form-wrapper" action="https://submit-form.com/KgBVFWmf">
+            <input type="email" class="text-field w-input" maxlength="256" name="Newsletter-Form" data-name="Newsletter Form" placeholder="EMAIL ADDRESSS" id="Newsletter-Form" required="">
+            <input type="submit" value="Subscribe" data-wait="Please wait..." class="button-form w-button"></form>
           <div class="success-message w-form-done">
             <div>Thank you! Your submission has been received!</div>
           </div>
